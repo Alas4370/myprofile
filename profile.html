@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon_io/favicon.ico">
+        <title>AJ | Portfolio</title>    
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="profile-container">
+                <div class="logo">
+                    <div class="profile-logo"><img src="assets/images/AJ.png"></div>
+                </div>
+                <div class="info">
+                    <div class="profile-info">
+                    <h2>Arjohn Jude F. Alagao</h2>
+                    <p>Web Developer | Generative AI Enthusiast | Hobbyist</p>
+                    <button class="contact-btn">Contact me <i class="fas fa-phone"></i></button>
+                    <button class="contact-btn">Resume <i class="fas fa-download"></i></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="main-content-section">
+                <aside class="sidebar-container">
+                    <div class="nav-container">
+                        <nav class="side-nav">
+                            <ul>
+                                <li><a href="#" class="nav-link active" data-target="about">About me</a></li>
+                                <li><a href="#" class="nav-link" data-target="skills">Skills</a></li>
+                                <li><a href="#" class="nav-link" data-target="experience">Work Experience</a></li>
+                                <li><a href="#" class="nav-link" data-target="projects">Projects</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="interests-container">
+                        <h3>Interests</h3>
+                        <div class="interests-boxes">
+                            <div class="interests-track">
+                                <ul>
+                                    <li><i class="fab fa-php"></i></li>
+                                    <li><i class="fab fa-laravel"></i></li>
+                                    <li><i class="fab fa-python"></i></li>
+                                    <li><i class="fab fa-html5"></i></li>
+
+                                    <!-- exact duplicate to make it seamless -->
+                                    <li><i class="fab fa-php"></i></li>
+                                    <li><i class="fab fa-laravel"></i></li>
+                                    <li><i class="fab fa-python"></i></li>
+                                    <li><i class="fab fa-html5"></i></li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-js"></i></li>
+                                    <li><i class="fas fa-database"></i></li>
+                                    <li><i class="fab fa-git-alt"></i></li>
+
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-js"></i></li>
+                                    <li><i class="fas fa-database"></i></li>
+                                    <li><i class="fab fa-git-alt"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <h3>Let's Connect</h3>
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://github.com/Alas4370" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.facebook.com/arjohnjude.alagao" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/aj_4las/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/arjohn-jude-alagao" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p>South Fundidor, Molo, Iloilo City, 5000, PH</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d290.34463888243016!2d122.53448175915548!3d10.687364594563498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1757741358724!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+                
+                <main class="content-container">
+                    <div id="about-content" class="content-section active">
+                        <h3>About me</h3>
+                        <div class="about-content">
+                            <div class="profile-photo">
+                                <img src="assets/images/profilepic.png" alt="Arjohn Jude F. Alagao">
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Hi, I’m <span class="name">Arjohn Jude!</span> I have experience in admin support, data entry and web development. 
+                                    I’ve handled tasks like inventory updates, data encoding, reporting, data annotation and web app support.
+                                </p>
+                                <p>
+                                    I love staying on top of the latest tech trends, especially in web development and AI tools. 
+                                    Outside of work, you’ll often find me riding my motorcycle, watching movies, playing PC games, or testing out new AI models and features.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skills-content" class="content-section">
+                        <h3>Skills</h3>
+                        <canvas id="webSkillsChart" width="500" height="300"></canvas>
+                        <canvas id="otherSkillsChart" width="500" height="300"></canvas>
+                    </div>
+
+                    <div id="experience-content" class="content-section">
+                        <h3>Work Experience</h3>
+                        <div class="experience-item">
+                            <h4 class="job-title">Former Probationary 2nd Lieutenant</h4>
+                            <p class="company-name">Armed Forces of the Philippines (Philippine Army)</p>
+                            <p class="job-dates">Feb 2022 - Aug 2022 (6 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Participated in rigorous physical and tactical training.</li>
+                                <li>Gained discipline, teamwork, and leadership through structured drills and lectures.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Communication</span>
+                                <span class="skill-card">Military Training</span>
+                                <span class="skill-card">Military Leadership</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">SAP Data Encoder</h4>
+                            <p class="company-name">Bancon Marketing Industries, Inc.</p>
+                            <p class="job-dates">Nov 2020 - Feb 2021 (4 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Updated stock levels in the inventory system.</li>
+                                <li>Verified order details before processing.</li>
+                                <li>Tracked incoming and outgoing stock items.</li>
+                                <li>Maintained an organized and up-to-date inventory record.</li>
+                                <li>Generated reports on orders and stock levels.</li>
+                                <li>Ensured data entry was accurate and timely.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Data Entry</span>
+                                <span class="skill-card">SAP ERP</span>
+                                <span class="skill-card">Computer Literacy</span>
+                                <span class="skill-card">Inventory</span>
+                                <span class="skill-card">Spreadsheet</span>
+                                <span class="skill-card">Documents</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Junior Web Developer</h4>
+                            <p class="company-name">Maven Solution Inc.</p>
+                            <p class="job-dates">Jan 2020 - Jun 2020 (6 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Enhanced receipt templates using front-end technologies.</li>
+                                <li>Created a download button to convert data into spreadsheets using JavaScript and DOM manipulation, enhancing reporting efficiency.</li>
+                                <li>Assisted in testing and maintaining the website to ensure optimal performance.</li>
+                                <li>Developed and tested web applications alongside senior developers.</li>
+                                <li>Implemented front-end and back-end functionality.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Web Design</span>
+                                <span class="skill-card">Web Development</span>
+                                <span class="skill-card">MySQL</span>
+                                <span class="skill-card">Laravel</span>
+                                <span class="skill-card">PHP</span>
+                                <span class="skill-card">HTML</span>
+                                <span class="skill-card">CSS</span>
+                                <span class="skill-card">Javascript</span>
+                                <span class="skill-card">Git</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">SAP Data Encoder</h4>
+                            <p class="company-name">Corden Agro Industries, Inc.</p>
+                            <p class="job-dates">Oct 2018 - Jan 2020 (1 yr 4 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Ensured data accuracy in SAP systems and generated reports.</li>
+                                <li>Resolved data entry issues efficiently, maintaining database integrity.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Data Entry</span>
+                                <span class="skill-card">SAP ERP</span>
+                                <span class="skill-card">Spreadsheet</span>
+                                <span class="skill-card">Documents</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Quality Analyst</h4>
+                            <p class="company-name">Glimmertech</p>
+                            <p class="job-dates">Mar 2018 - Sep 2018 (7 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Ensured accuracy and quality of imagery data.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Image Analysis</span>
+                                <span class="skill-card">Quality Assurance</span>
+                                <span class="skill-card">Data Annotation</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Imagery Analyst</h4>
+                            <p class="company-name">Glimmertech</p>
+                            <p class="job-dates">Jan 2018 - Jun 2020 (6 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Analyzed satellite or aerial images to gather information.</li>                                
+                                <li>Used specialized software to enhance and evaluate imagery</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Image Analysis</span>
+                                <span class="skill-card">Quality Assurance</span>
+                                <span class="skill-card">Data Annotation</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Data Encoder</h4>
+                            <p class="company-name">Corden Agro Industries, Inc.</p>
+                            <p class="job-dates">Jun 2017 - Dec 2017 (7 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Recorded daily manufacturing outputs and maintained data records.</li>                                
+                                <li>Worked closely with factory staff to ensure data accuracy and address discrepancies.</li>
+                                <li>Ensured all entered data is correct and matches physical production records.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Data Entry</span>
+                                <span class="skill-card">SAP ERP</span>
+                                <span class="skill-card">Spreadsheet</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Internship</h4>
+                            <p class="company-name">National Bureau of Investigation - Regiopn 6</p>
+                            <p class="job-dates">Nov 2016 - Mar 2017 (5 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Entered biometric data accurately into the database.</li>                                
+                                <li>Review identification documents and forms for accuracy and completeness</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Data Entry</span>
+                                <span class="skill-card">Biometrics</span>
+                                <span class="skill-card">Quality Assurance</span>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 class="job-title">Web Programmer</h4>
+                            <p class="company-name">Capstone Project</p>
+                            <p class="job-dates">Dec 2015 - Feb 2017 (1 yr 3 mos)</p>
+
+                            <ul class="job-responsibilities">
+                                <li>Led the development of a Web-Based Courseware, handling all programming tasks while teammates focused on documentation.</li>                                
+                                <li>Designed and implemented the system using PHP, jQuery, MySQL and Bootstrap CSS to enhance usability and performance.</li>
+                                <li>Collaborated with the team to ensure technical implementation aligned with research objectives.</li>
+                                <li>Successfully presented and defended the project, demonstrating its functionality and impact.</li>
+                            </ul>
+
+                            <div class="skills-earned">
+                                <span class="skill-card">Web Design</span>
+                                <span class="skill-card">Web Development</span>
+                                <span class="skill-card">HTML</span>
+                                <span class="skill-card">Databases</span>
+                                <span class="skill-card">PHP</span>
+                                <span class="skill-card">CSS</span>
+                                <span class="skill-card">Javascript</span>
+                                <span class="skill-card">Bootstrap</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="projects-content" class="content-section">
+                        <h3>Projects</h3>
+                        <p>This section is for showcasing your projects and portfolio.</p>
+                    </div>
+                </main>
+            </div>
+
+            <footer class="footer-container">
+                © Arjohn Jude F. Alagao
+            </footer>
+        </div>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/chart.js"></script>
+    </body>
+</html>
