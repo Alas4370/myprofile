@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
           data: webRawValues.map(v => Math.max(v - circleOffset, 0)), // shorten each bar slightly
           backgroundColor: '#00b894',
           borderSkipped: false,
-          barThickness: 6
+          barThickness: 4
         },
         {
           label: 'End Circles',
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
           data: otherRawValues.map(v => Math.max(v - circleOffset, 0)), // shorten each bar slightly
           backgroundColor: '#00b894',
           borderSkipped: false,
-          barThickness: 6
+          barThickness: 4
         },
         {
           label: 'End Circles',
