@@ -396,7 +396,7 @@ iframe {
     padding-left: 30px;      /* space for the line */
     padding-bottom: 10px;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(20px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -472,3 +472,4 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
