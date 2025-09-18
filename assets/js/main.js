@@ -34,7 +34,11 @@ setInterval(() => {
   }
 }, 2000);
 
-const headings = document.querySelectorAll('.content-section h3');
+const contentTitle = document.querySelectorAll('.content-section h3');
+const profilePhoto = document.querySelectorAll('.profile-photo img');
+const aboutText = document.querySelectorAll('.about-text p');
+const skillsCanvas = document.querySelectorAll('canvas');
+const expItem = document.querySelectorAll('.experience-item');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -46,4 +50,8 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.2 }); // triggers when 20% is visible
 
-headings.forEach(h3 => observer.observe(h3));
+contentTitle.forEach(h3 => observer.observe(h3));
+profilePhoto.forEach(img => observer.observe(img));
+aboutText.forEach(p => observer.observe(p));
+skillsCanvas.forEach(canvas => observer.observe(canvas));
+expItem.forEach(item => observer.observe(item));
