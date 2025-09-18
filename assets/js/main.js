@@ -57,5 +57,6 @@ skillsCanvas.forEach(canvas => observer.observe(canvas));
 expItem.forEach(item => observer.observe(item));
 
 function downloadPDF() {
-    window.open('https://github.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
+    window.open('https://raw.githubusercontent.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
 }
+
