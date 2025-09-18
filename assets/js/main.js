@@ -55,3 +55,7 @@ profilePhoto.forEach(img => observer.observe(img));
 aboutText.forEach(p => observer.observe(p));
 skillsCanvas.forEach(canvas => observer.observe(canvas));
 expItem.forEach(item => observer.observe(item));
+
+function downloadPDF() {
+    window.open('https://github.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
+}
