@@ -205,6 +205,7 @@ html, body {
     color: var(--text-color);
     font-size: 14px;
     max-width: 100%;
+    max-height: 400px;
 }
 
 #contactForm button[type="submit"] {
@@ -672,6 +673,7 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
 
 
 
