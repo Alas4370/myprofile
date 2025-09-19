@@ -75,3 +75,51 @@ educCard.forEach(el => observer.observe(el));
 function downloadPDF() {
     window.open('https://raw.githubusercontent.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
 }
+
+// Modal for email
+const contactBtn = document.querySelector('.contact-btn'); 
+const modal = document.getElementById('contactModal');
+const closeModal = modal.querySelector('.close');
+
+contactBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
+// Email form error handling
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  formStatus.innerHTML = 'Sending <span></span><span></span><span></span>';
+
+  emailjs.sendForm('service_ocjmi8k', 'template_116vgg6', this)
+    .then(() => {
+      formStatus.style.color = 'green';
+      formStatus.textContent = 'Message sent successfully!';
+      
+      setTimeout(() => {
+        modal.style.display = 'none';
+        contactForm.reset();
+        formStatus.textContent = '';
+      }, 2500);
+    })
+    .catch((err) => {
+      formStatus.style.color = '#f5567b';
+      formStatus.textContent = 'Failed to send message. Try again.';
+      console.error(err);
+    });
+});
+
