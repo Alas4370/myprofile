@@ -39,24 +39,39 @@ const profilePhoto = document.querySelectorAll('.profile-photo img');
 const aboutText = document.querySelectorAll('.about-text p');
 const skillsCanvas = document.querySelectorAll('canvas');
 const expItem = document.querySelectorAll('.experience-item');
+const educCard = document.querySelectorAll('.education-card');
+
+const staggerGroups = [
+  { elements: educCard, className: 'education-card' },
+  { elements: skillsCanvas, className: 'canvas' }
+];
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');      // animate in
+      const group = staggerGroups.find(g => entry.target.classList.contains(g.className) || entry.target.tagName.toLowerCase() === g.className);
+      
+      if (group) {
+        const index = Array.from(group.elements).indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('show');
+        }, index * 300);
+      } else {
+        entry.target.classList.add('show');
+      }
     } else {
-      entry.target.classList.remove('show');   // reset when out of view
+      entry.target.classList.remove('show');
     }
   });
-}, { threshold: 0.2 }); // triggers when 20% is visible
+}, { threshold: 0.2 });
 
-contentTitle.forEach(h3 => observer.observe(h3));
-profilePhoto.forEach(img => observer.observe(img));
-aboutText.forEach(p => observer.observe(p));
-skillsCanvas.forEach(canvas => observer.observe(canvas));
-expItem.forEach(item => observer.observe(item));
+contentTitle.forEach(el => observer.observe(el));
+profilePhoto.forEach(el => observer.observe(el));
+aboutText.forEach(el => observer.observe(el));
+skillsCanvas.forEach(el => observer.observe(el));
+expItem.forEach(el => observer.observe(el));
+educCard.forEach(el => observer.observe(el));
 
 function downloadPDF() {
     window.open('https://raw.githubusercontent.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
 }
-
