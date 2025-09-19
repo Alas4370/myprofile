@@ -107,7 +107,7 @@ contactForm.addEventListener('submit', function(e) {
 
   emailjs.sendForm('service_xfhiwpq', 'template_116vgg6', this)
     .then(() => {
-      formStatus.style.color = 'green';
+      formStatus.style.color = '#5ebb9f';
       formStatus.textContent = 'Message sent successfully!';
       
       setTimeout(() => {
@@ -122,5 +122,6 @@ contactForm.addEventListener('submit', function(e) {
       console.error(err);
     });
 });
+
 
 
