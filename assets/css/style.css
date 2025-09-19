@@ -382,7 +382,16 @@ iframe {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
 }
+
+.education-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .education-header {
     display: flex;
     justify-content: space-between;
