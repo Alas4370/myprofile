@@ -634,6 +634,15 @@ iframe {
     background: rgba(94, 187, 159, 0.158);
 }
 
+#output {
+    white-space: pre;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: unset;
+    transform: unset;
+    overflow-y: hidden;
+}
 
 /* --- Footer --- */
 .footer-container {
@@ -641,3 +650,4 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
