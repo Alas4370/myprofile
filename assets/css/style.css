@@ -21,6 +21,24 @@ html, body {
     background-color: var(--bg-color);
 }
 
+::-webkit-scrollbar {
+  width: 5px;           
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--link-color);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--link-color) 80%, black);
+}
+
 /* Main wrapper to hold all containers */
 .page-wrapper {
     max-width: 800px;
@@ -506,5 +524,6 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
 
 
