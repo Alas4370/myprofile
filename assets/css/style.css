@@ -19,6 +19,28 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: var(--bg-color);
+
+    /* Firefox */
+    scrollbar-width: thin;         
+    scrollbar-color: var(--link-color) #f1f1f1; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;           
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--link-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--link-color) 80%, black);
 }
 
 /* Main wrapper to hold all containers */
@@ -498,8 +520,6 @@ iframe {
     font-size: 0.85rem;
     background: rgba(94, 187, 159, 0.158);
 }
-
-
 
 
 /* --- Footer --- */
