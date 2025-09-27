@@ -149,7 +149,7 @@ html, body {
     100% { background-position: 0%   50%; }
 }
 
-/* Modal hidden by default */
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -160,13 +160,12 @@ html, body {
     animation: fadeIn 0.3s ease;
 }
 
-/* Centered card */
 .modal-content {
     background: var(--bg-color);
     color: var(--text-color);
     margin: 8% auto;
     padding: 30px 25px;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 100%;
     max-width: 720px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -184,6 +183,7 @@ html, body {
     cursor: pointer;
     transition: color 0.2s;
 }
+
 .close:hover {
     color: var(--link-color);
 }
@@ -199,7 +199,7 @@ html, body {
 #contactForm input,
 #contactForm textarea {
     padding: 12px 15px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid var(--border-color);
     background: var(--input-bg);
     color: var(--text-color);
@@ -211,18 +211,18 @@ html, body {
 #contactForm button[type="submit"] {
     padding: 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     background: var(--link-color);
     color: #fff;
     font-size: 15px;
     cursor: pointer;
     transition: background 0.2s;
 }
+
 #contactForm button[type="submit"]:hover {
     background: color-mix(in srgb, var(--link-color) 80%, black);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -262,9 +262,6 @@ html, body {
     from { transform: translateY(0); }
     to { transform: translateY(-6px); }
 }
-
-
-
 
 /* --- Main Content Section (Sidebar + Main Content) --- */
 .main-content-section {
@@ -439,7 +436,7 @@ iframe {
 }
 
 .about-content {
-  display: block;
+    display: block;
 }
 
 .about-text p {
@@ -521,13 +518,13 @@ iframe {
     padding: 10px;
     margin-bottom: 15px;
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateX(40px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
 .education-card.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .education-header {
@@ -546,7 +543,7 @@ iframe {
 }
 
 .education-awards li {
-  margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 
@@ -673,7 +670,3 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
-
-
-
-
