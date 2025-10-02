@@ -19,6 +19,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: var(--bg-color);
+    overflow: hiddden;
 }
 
 ::-webkit-scrollbar {
@@ -670,3 +671,4 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
