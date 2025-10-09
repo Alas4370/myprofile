@@ -280,12 +280,11 @@ html, body {
 
 /* --- Sidebar Container --- */
 .sidebar-container {
-    overflow: hidden;
     flex-shrink: 0;
     width: 250px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: 10px 20px 10px 20px;
 }
@@ -671,6 +670,7 @@ iframe {
     text-align: center;
     font-size: 0.8em;
 }
+
 
 
 
