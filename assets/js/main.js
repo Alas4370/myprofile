@@ -73,7 +73,7 @@ expItem.forEach(el => observer.observe(el));
 educCard.forEach(el => observer.observe(el));
 
 function downloadPDF() {
-    window.open('https://raw.githubusercontent.com/Alas4370/myprofile/main/assets/pdf/AJ_Resume.pdf', '_blank');
+    window.open('https://raw.githubusercontent.com/Alas4370/myprofile/main/assets/pdf/Arjohn_Jude_Resume.pdf', '_blank');
 }
 
 // Modal for email
